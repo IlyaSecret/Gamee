@@ -1549,7 +1549,11 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
+<<<<<<< HEAD
   m_Enabled: 0
+=======
+  m_Enabled: 1
+>>>>>>> parent of d652e20 (Начало работы со звуком.)
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -2138,7 +2142,6 @@ GameObject:
   - component: {fileID: 639920088}
   - component: {fileID: 639920089}
   - component: {fileID: 639920091}
-  - component: {fileID: 639920090}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2279,18 +2282,6 @@ MonoBehaviour:
   - {fileID: 1307418282}
   fullHeart: {fileID: 21300000, guid: 8a2d58510f80b0041886f4e11827e4f4, type: 3}
   emptyHeart: {fileID: 21300000, guid: 4d675b83a2321ae4ba5533dd1c3f37b8, type: 3}
---- !u!114 &639920090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 639920084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d73195daaab2cf945a2679a652670b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &639920091
 MonoBehaviour:
   m_ObjectHideFlags: 0
