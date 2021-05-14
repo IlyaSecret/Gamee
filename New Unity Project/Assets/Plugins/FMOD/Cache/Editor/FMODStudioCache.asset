@@ -1,5 +1,28 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8892341311992244068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sounds/Interface/Interface_1
+  m_EditorClassIdentifier: 
+  Path: event:/Sounds/Interface/Interface_1
+  guid: e99ff569becc4942b499cbbcc15b2fd8
+  Banks:
+  - {fileID: -8034148229517465707}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 220
 --- !u!114 &-8034148229517465707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,7 +38,7 @@ MonoBehaviour:
   Path: GameAudio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637566099225660566
+  lastModified: 637566120812102900
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -107,12 +130,14 @@ MonoBehaviour:
   - {fileID: -6300094060785423270}
   - {fileID: -4895247788928127871}
   - {fileID: -7962558064106374219}
+  - {fileID: -8892341311992244068}
+  - {fileID: 8429765576268073439}
   EditorParameters: []
   MasterBanks:
   - {fileID: -8034148229517465707}
   StringsBanks:
   - {fileID: 2828377425816943628}
-  stringsBankWriteTime: 637566099225670547
+  stringsBankWriteTime: 637566120812112899
   cacheVersion: 6
 --- !u!114 &2828377425816943628
 MonoBehaviour:
@@ -129,9 +154,32 @@ MonoBehaviour:
   Path: GameAudio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637566099225670547
+  lastModified: 637566120812112899
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 860
+    Value: 968
   Exists: 1
+--- !u!114 &8429765576268073439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sounds/Interface/Interface_2
+  m_EditorClassIdentifier: 
+  Path: event:/Sounds/Interface/Interface_2
+  guid: feeb95e81ad1fd4a9dfeeb633b7b59a9
+  Banks:
+  - {fileID: -8034148229517465707}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 130
