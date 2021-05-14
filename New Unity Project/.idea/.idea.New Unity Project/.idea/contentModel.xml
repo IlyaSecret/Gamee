@@ -19,6 +19,8 @@
         <e p="Scripts" t="Include">
           <e p="BulletScr.cs" t="Include" />
           <e p="EnemyScr.cs" t="Include" />
+          <e p="Keyboard.cs" t="Include" />
+          <e p="LetterBar.cs" t="Include" />
           <e p="LevelMovement.cs" t="Include" />
           <e p="PauseMenu.cs" t="Include" />
           <e p="Player.cs" t="Include" />
