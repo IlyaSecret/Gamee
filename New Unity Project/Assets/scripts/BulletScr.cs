@@ -5,27 +5,6 @@ using UnityEngine;
 public class BulletScr : MonoBehaviour
 {
     public float speed;
-    public float lifeTime;
-    public float distance;
-    public int damage;
-    public LayerMask whatIsSolid;
-
-
-    private void Update()
-    {
-        RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, transform.up, distance, whatIsSolid);
-        if (hitInfo.collider != null)
-        {
-            if (hitInfo.collider.CompareTag("Enemy"))
-            {
-                hitInfo.collider.GetComponent<Enemy>().TakeDamage(damage);
-            }
-            Destroy(gameObject);
-        }
-        transform.Translate(Vector2.right * speed * Time.deltaTime);
-    }
-
-    /*public float speed;
     public Rigidbody2D rb;
     void Start()
     {
@@ -36,13 +15,24 @@ public class BulletScr : MonoBehaviour
     
     void Update()
     {
-        
-    }
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.collider.CompareTag("Enemy"))
+        //уничтожение пули, если она выйдет за предел экрана
+        var min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
+        var max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
+        if (transform.position.x > max.x || transform.position.x < min.x)
         {
-            Destroy(other.gameObject);
+            Destroy(this.gameObject);
         }
-    }*/
+        if (transform.position.y > max.y || transform.position.y < min.y)
+        {
+            Destroy(this.gameObject);
+        }
+    }
+    void OnCollisionEnter2D(Collision2D Coll)
+    {
+        if (Coll.collider.CompareTag("Enemy"))
+        {
+            Destroy(Coll.gameObject);
+            Destroy(gameObject);
+        }
+    }
 }

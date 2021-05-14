@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    public bool IJ;
     public int health;
     public int numOfHearts;
 
@@ -13,8 +13,14 @@ public class Player : MonoBehaviour
     public Sprite fullHeart;
     public Sprite emptyHeart;
 
+
+
     private void FixedUpdate()
     {
+        if (health == 0)
+        {
+            SceneManager.LoadScene("SampleScene");
+        }
         if (health > numOfHearts)
             health = numOfHearts;
 
@@ -32,17 +38,13 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        IJ = false;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space) && IJ == false)
-        {
-            GetComponent<Rigidbody2D>().velocity = new Vector3(0, 10, 0);
-            IJ = true;
-        }
+
     }
 
     void OnCollisionEnter2D(Collision2D Coll)
