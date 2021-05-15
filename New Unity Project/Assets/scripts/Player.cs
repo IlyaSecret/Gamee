@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -12,7 +13,7 @@ public class Player : MonoBehaviour
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
-
+    public Animator anim;
 
 
     private void FixedUpdate()
@@ -38,7 +39,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
