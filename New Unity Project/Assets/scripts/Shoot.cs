@@ -9,7 +9,7 @@ public class Shoot : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
-            Instantiate(Bullet, shotPoint.position, transform.rotation);
+        /*if (Input.GetKeyDown(KeyCode.F))*/
+            
     }
 }
