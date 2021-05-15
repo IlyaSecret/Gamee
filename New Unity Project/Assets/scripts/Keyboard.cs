@@ -1,6 +1,5 @@
 
 using System;
-using System.IO;
 using UnityEngine.UI;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -22,8 +21,7 @@ public class Keyboard : MonoBehaviour
             letters[i].text = keyCodes[i].ToString();
         }
     }
-
-    public void Update()
+    private void Update()
     {
         if (!Input.anyKeyDown) return;
         var pressed = false;
@@ -39,7 +37,6 @@ public class Keyboard : MonoBehaviour
 
         if (!pressed)
         {
-
         }
     }
 

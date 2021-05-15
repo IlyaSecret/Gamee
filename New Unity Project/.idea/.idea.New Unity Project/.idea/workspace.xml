@@ -1,15 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9375224-98a4-43d7-912b-6c46b127bb03" name="Default Changelist" comment="" />
+    <list default="true" id="a9375224-98a4-43d7-912b-6c46b127bb03" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scripts/BulletScr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts/BulletScr.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scripts/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts/PauseMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scripts/Shoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts/Shoot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scripts/Keyboard.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scripts/Restart.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -20,10 +51,17 @@
         <option value="$PROJECT_DIR$/Assets/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Hero.cs" />
+        <option value="$PROJECT_DIR$/Assets/scripts/Restart.cs" />
+        <option value="$PROJECT_DIR$/Assets/scripts/LetterBar.cs" />
+        <option value="$PROJECT_DIR$/Assets/scripts/Shoot.cs" />
+        <option value="$PROJECT_DIR$/Assets/scripts/PauseMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/scripts/Keyboard.cs" />
+        <option value="$PROJECT_DIR$/Assets/scripts/Player.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1rA858MlXZUsS5eTMxHNlJhGUc2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -70,6 +108,9 @@
       <workItem from="1619779886757" duration="711000" />
       <workItem from="1620104734936" duration="247000" />
       <workItem from="1620108396648" duration="807000" />
+      <workItem from="1620977446866" duration="3255000" />
+      <workItem from="1620989752174" duration="1795000" />
+      <workItem from="1620991565104" duration="1466000" />
     </task>
     <servers />
   </component>
@@ -78,6 +119,18 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

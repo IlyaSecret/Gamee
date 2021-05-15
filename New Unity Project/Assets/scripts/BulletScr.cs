@@ -15,7 +15,7 @@ public class BulletScr : MonoBehaviour
     
     void Update()
     {
-        //óíè÷òîæåíèå ïóëè, åñëè îíà âûéäåò çà ïðåäåë ýêðàíà
+        //ÑƒÐ½Ð¸Ñ‡Ñ‚Ð¾Ð¶ÐµÐ½Ð¸Ðµ Ð¿ÑƒÐ»Ð¸, ÐµÑÐ»Ð¸ Ð¾Ð½Ð° Ð²Ñ‹Ð¹Ð´ÐµÑ‚ Ð·Ð° Ð¿Ñ€ÐµÐ´ÐµÐ» ÑÐºÑ€Ð°Ð½Ð°
         var min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
         var max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
         if (transform.position.x > max.x || transform.position.x < min.x)

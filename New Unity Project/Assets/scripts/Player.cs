@@ -9,7 +9,6 @@ public class Player : MonoBehaviour
 {
     public int health;
     public int numOfHearts;
-
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
