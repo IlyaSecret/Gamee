@@ -10,12 +10,9 @@ public class Keyboard : MonoBehaviour
     public Transform shotPoint;
     [SerializeField] private Text[] letters;
     private KeyCode[] keyCodes = new KeyCode[9];
+    private readonly KeyCode[] dictionary = {KeyCode.A, KeyCode.O};
     Animator anim = Player.anim;
-    private readonly KeyCode[] dictionary = {KeyCode.O, KeyCode.A};
-    public Text hitCount;
-    public Text missCount;
-    public int miss = 0;
-    public int hit = 0;
+
 
     private void Awake()
     {
@@ -37,16 +34,11 @@ public class Keyboard : MonoBehaviour
                 pressed = true;
                 Instantiate(Bullet, shotPoint.position, transform.rotation);
                 Shift();
-                hit += 1;
-                hitCount.text = hit.ToString();
             }
-            
         }
 
         if (!pressed)
         {
-            miss += 1;
-            missCount.text = miss.ToString();
         }
     }
 
