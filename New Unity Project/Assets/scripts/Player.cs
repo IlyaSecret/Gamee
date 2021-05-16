@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
+    public GameObject EndGameMenu;
 
 
 
