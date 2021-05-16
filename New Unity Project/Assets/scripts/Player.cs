@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     public Sprite fullHeart;
     public Sprite emptyHeart;
     public static Animator anim;
+    public GameObject EndGameMenu;
 
 
     private void FixedUpdate()
