@@ -20,12 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9375224-98a4-43d7-912b-6c46b127bb03" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/scripts/BulletScr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts/BulletScr.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/scripts/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts/PauseMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scripts/Keyboard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts/Keyboard.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/scripts/Shoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts/Shoot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +52,9 @@
         <option value="$PROJECT_DIR$/Assets/scripts/LetterBar.cs" />
         <option value="$PROJECT_DIR$/Assets/scripts/Shoot.cs" />
         <option value="$PROJECT_DIR$/Assets/scripts/PauseMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/scripts/HitCount.cs" />
         <option value="$PROJECT_DIR$/Assets/scripts/Keyboard.cs" />
+        <option value="$PROJECT_DIR$/Assets/scripts/BestScore.cs" />
         <option value="$PROJECT_DIR$/Assets/scripts/Player.cs" />
       </list>
     </option>
@@ -111,6 +110,7 @@
       <workItem from="1620977446866" duration="3255000" />
       <workItem from="1620989752174" duration="1795000" />
       <workItem from="1620991565104" duration="1466000" />
+      <workItem from="1621159603736" duration="3660000" />
     </task>
     <servers />
   </component>
