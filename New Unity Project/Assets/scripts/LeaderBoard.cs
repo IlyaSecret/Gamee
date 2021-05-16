@@ -22,22 +22,22 @@ public class LeaderBoard : MonoBehaviour
         Data.Add(data);
         PlayerPrefs.SetInt("score count", Data.Count);
         PlayerPrefs.SetString($"name{Data.Count - 1}", data.name);
-        PlayerPrefs.SetInt($"score{Data.Count - 1}", data.score);
+        PlayerPrefs.SetInt($"name{Data.Count - 1}", data.score);
         ShowResult();
     }
 
     private void ShowResult()
     {
-        Data = Data.OrderByDescending(data => data.score).ToList();
+        Data = Data.OrderBy(data => data.score).ToList();
         for (var i = 0; i < scores.Length; i++)
         {
             if (i >= Data.Count)
             {
-                scores[i].Initialise("-", (i+1).ToString(), "-");
+                scores[i].Initialise("", (i+1).ToString(), "");
             }
             else
             {
-                scores[i].Initialise(Data[i].name == "" ? "Who are you?" : Data[i].name, (i+1).ToString(), Data[i].score.ToString());
+                scores[i].Initialise(Data[i].name, (i+1).ToString(), Data[i].score.ToString());
             }
         }
     }
