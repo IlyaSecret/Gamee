@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
-    public Animator anim;
+    public static Animator anim;
 
 
     private void FixedUpdate()
@@ -41,7 +41,6 @@ public class Player : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
 

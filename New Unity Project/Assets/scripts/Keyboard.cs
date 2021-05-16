@@ -11,6 +11,8 @@ public class Keyboard : MonoBehaviour
     [SerializeField] private Text[] letters;
     private KeyCode[] keyCodes = new KeyCode[9];
     private readonly KeyCode[] dictionary = {KeyCode.A, KeyCode.O};
+    Animator anim = Player.anim;
+
 
     private void Awake()
     {

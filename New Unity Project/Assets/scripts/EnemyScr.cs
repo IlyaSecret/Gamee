@@ -4,21 +4,11 @@ using UnityEngine;
 
 public class EnemyScr : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnCollisionEnter2D(Collision2D Coll)
     {
-        
+        if (Coll.collider.CompareTag("Enemy"))
+        {
+            Destroy(Coll.gameObject);
+        }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider.CompareTag("Bullet"))
-            Destroy(gameObject);
-    }
-}
+}    
