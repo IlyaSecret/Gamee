@@ -44,7 +44,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        transform.position -= new Vector3(-6f * Time.deltaTime, 0, 0);
     }
 
     void OnCollisionEnter2D(Collision2D Coll)
