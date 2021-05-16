@@ -1519,6 +1519,10 @@ MonoBehaviour:
   - {fileID: 822469350}
   - {fileID: 373624372}
   - {fileID: 1555695705}
+  hitCount: {fileID: 514713504}
+  missCount: {fileID: 1963575532}
+  miss: 0
+  hit: 0
 --- !u!1 &466777407
 GameObject:
   m_ObjectHideFlags: 0
@@ -2516,6 +2520,7 @@ MonoBehaviour:
   - {fileID: 1307418282}
   fullHeart: {fileID: 21300000, guid: 8a2d58510f80b0041886f4e11827e4f4, type: 3}
   emptyHeart: {fileID: 21300000, guid: 4d675b83a2321ae4ba5533dd1c3f37b8, type: 3}
+  EndGameMenu: {fileID: 1295481106}
 --- !u!114 &639920091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5656,6 +5661,7 @@ GameObject:
   - component: {fileID: 1596385845}
   - component: {fileID: 1596385847}
   - component: {fileID: 1596385846}
+  - component: {fileID: 1596385848}
   m_Layer: 5
   m_Name: BestMissCount_Text
   m_TagString: Untagged
@@ -5724,6 +5730,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1596385844}
   m_CullTransparentMesh: 1
+--- !u!114 &1596385848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596385844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89ddad5533da23949a23d3961cd47c18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  best: {fileID: 0}
+  currentScore: 0
+  currentMiss: 0
+  hitBest: {fileID: 0}
+  missBest: {fileID: 0}
 --- !u!1 &1596639274
 GameObject:
   m_ObjectHideFlags: 0
@@ -5735,6 +5758,7 @@ GameObject:
   - component: {fileID: 1596639275}
   - component: {fileID: 1596639277}
   - component: {fileID: 1596639276}
+  - component: {fileID: 1596639278}
   m_Layer: 5
   m_Name: BestHitCount_Text
   m_TagString: Untagged
@@ -5803,6 +5827,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1596639274}
   m_CullTransparentMesh: 1
+--- !u!114 &1596639278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596639274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89ddad5533da23949a23d3961cd47c18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  best: {fileID: 434358582}
+  currentScore: 0
+  currentMiss: 0
+  hitBest: {fileID: 0}
+  missBest: {fileID: 0}
 --- !u!1 &1607347464
 GameObject:
   m_ObjectHideFlags: 0
