@@ -3367,6 +3367,8 @@ MonoBehaviour:
   fullHeart: {fileID: 21300000, guid: 8a2d58510f80b0041886f4e11827e4f4, type: 3}
   emptyHeart: {fileID: 21300000, guid: 4d675b83a2321ae4ba5533dd1c3f37b8, type: 3}
   EndGameMenu: {fileID: 217322430}
+  anim: {fileID: 639920090}
+  enemyAnim: {fileID: 2279744448279309421, guid: 73aa62985aeb0aa4c9973ef80de3d7c3, type: 3}
 --- !u!95 &639920090
 Animator:
   serializedVersion: 3
