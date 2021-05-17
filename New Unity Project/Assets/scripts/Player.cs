@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
         if (health == 0)
         {
             EndGameMenu.SetActive(true);
-            Time.timeScale = 1f;
+            Time.timeScale = 0f;
         }
         if (health > numOfHearts)
             health = numOfHearts;

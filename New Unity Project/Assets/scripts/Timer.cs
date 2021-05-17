@@ -7,6 +7,8 @@ public class Timer : MonoBehaviour
 {
     public static float timeStart;
     public Text textTimer;
+    public Text score;
+    public Text finalScore;
     void Start()
     {
         textTimer.text = timeStart.ToString();
@@ -16,5 +18,7 @@ public class Timer : MonoBehaviour
     {
         timeStart += Time.deltaTime;
         textTimer.text = Mathf.Round(timeStart).ToString();
+        score.text = textTimer.text;
+        finalScore.text = textTimer.text;
     }
 }

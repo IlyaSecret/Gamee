@@ -18,41 +18,7 @@ public class Keyboard : MonoBehaviour
     public Text missCount;
     public int miss = 0;
     public int hit = 0;
-    /*private readonly Dictionary<KeyCode, int> colors = new Dictionary<KeyCode, int>
-    {
-        [KeyCode.Q] = 4,
-        [KeyCode.W] = 5,
-        [KeyCode.E] = 2,
-        [KeyCode.R] = 0,
-        [KeyCode.T] = 0,
-        [KeyCode.Y] = 1,
-        [KeyCode.U] = 1,
-        [KeyCode.I] = 2,
-        [KeyCode.O] = 3,
-        [KeyCode.P] = 4,
-        [KeyCode.LeftBracket] = 4,
-        [KeyCode.RightBracket] = 4,
-        [KeyCode.A] = 4,
-        [KeyCode.S] = 3,
-        [KeyCode.D] = 2,
-        [KeyCode.F] = 0,
-        [KeyCode.G] = 0,
-        [KeyCode.H] = 1,
-        [KeyCode.J] = 1,
-        [KeyCode.K] = 2,
-        [KeyCode.L] = 2,
-        [KeyCode.Semicolon] = 3,
-        [KeyCode.Quote] = 4,
-        [KeyCode.Z] = 4,
-        [KeyCode.X] = 3,
-        [KeyCode.C] = 2,
-        [KeyCode.V] = 0,
-        [KeyCode.B] = 0,
-        [KeyCode.N] = 1,
-        [KeyCode.M] = 1,
-        [KeyCode.Comma] = 2,
-        [KeyCode.Period] = 3
-    };*/
+  
 
     private readonly Dictionary<KeyCode, string> dictionary = new Dictionary<KeyCode, string>
     {

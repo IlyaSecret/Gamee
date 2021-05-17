@@ -1024,7 +1024,6 @@ GameObject:
   - component: {fileID: 297137089}
   - component: {fileID: 297137088}
   - component: {fileID: 297137092}
-  - component: {fileID: 297137093}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1138,18 +1137,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Pause_Menu: {fileID: 1169378256}
---- !u!114 &297137093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 297137087}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &304616910
 GameObject:
   m_ObjectHideFlags: 0
@@ -2128,11 +2115,7 @@ MonoBehaviour:
   - {fileID: 373624372}
   - {fileID: 1555695705}
   colors:
-  - {r: 0.89019614, g: 0.6039216, b: 0.20000002, a: 1}
-  - {r: 0.9176471, g: 0.87843144, b: 0.5803922, a: 1}
-  - {r: 0.9725491, g: 0.3019608, b: 0.83921576, a: 1}
-  - {r: 0.69411767, g: 0.6784314, b: 1, a: 1}
-  - {r: 0.52156866, g: 1, b: 0.654902, a: 1}
+  - {r: 0.18431373, g: 0.14509805, b: 0.2784314, a: 1}
   hitCount: {fileID: 514713504}
   missCount: {fileID: 1963575532}
   miss: 0
@@ -2614,6 +2597,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textTimer: {fileID: 1872884952}
+  score: {fileID: 2056382599}
+  finalScore: {fileID: 333504480}
 --- !u!1 &524150167
 GameObject:
   m_ObjectHideFlags: 0
