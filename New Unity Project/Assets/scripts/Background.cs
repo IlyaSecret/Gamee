@@ -18,11 +18,11 @@ public class Background : MonoBehaviour
     {
         if (background1.position.x + width <= Camera.main.transform.position.x)
         {
-            background1.position += new Vector3(2 * width, 0);
+            background1.position += new Vector3(width, 0);
         }
         if (background2.position.x + width <= Camera.main.transform.position.x)
         {
-            background2.position += new Vector3(2 * width, 0);
+            background2.position += new Vector3(width, 0);
         }
     }
 }

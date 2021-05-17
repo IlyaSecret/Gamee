@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     public Sprite fullHeart;
     public Sprite emptyHeart;
     public GameObject EndGameMenu;
+    private float speed = 6f;
 
     private void FixedUpdate()
     {
@@ -41,7 +42,8 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        transform.position -= new Vector3(-6f * Time.deltaTime, 0, 0);
+        speed += Time.deltaTime / 100;
+        transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
     }
 
     void OnCollisionEnter2D(Collision2D Coll)
