@@ -5,16 +5,16 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    public float timeStart;
+    public static float timeStart;
     public Text textTimer;
     void Start()
     {
-        textTimer.text = timeStart.ToString("F0");
+        textTimer.text = timeStart.ToString();
     }
 
     void Update()
     {
         timeStart += Time.deltaTime;
-        textTimer.text = timeStart.ToString("F0");
+        textTimer.text = Mathf.Round(timeStart).ToString();
     }
 }

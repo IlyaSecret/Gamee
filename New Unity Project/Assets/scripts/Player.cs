@@ -13,13 +13,12 @@ public class Player : MonoBehaviour
     public Sprite emptyHeart;
     public GameObject EndGameMenu;
 
-
-
     private void FixedUpdate()
     {
         if (health == 0)
         {
-            SceneManager.LoadScene("SampleScene");
+            EndGameMenu.SetActive(true);
+            Time.timeScale = 1f;
         }
         if (health > numOfHearts)
             health = numOfHearts;
@@ -38,10 +37,8 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-
     }
 
-    // Update is called once per frame
     void Update()
     {
         transform.position -= new Vector3(-6f * Time.deltaTime, 0, 0);
