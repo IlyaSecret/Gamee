@@ -42,7 +42,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        speed += Time.deltaTime / 100;
+        speed += Time.deltaTime / 5;
         transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
     }
 
