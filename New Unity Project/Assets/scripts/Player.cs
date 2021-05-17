@@ -13,15 +13,13 @@ public class Player : MonoBehaviour
     public Sprite emptyHeart;
     public GameObject EndGameMenu;
     private float speed = 6f;
-    public Animator anim;
-    public Animator enemyAnim;
 
     private void FixedUpdate()
     {
         if (health == 0)
         {
-            Time.timeScale = 0f;
             EndGameMenu.SetActive(true);
+            Time.timeScale = 0f;
         }
         if (health > numOfHearts)
             health = numOfHearts;
@@ -38,9 +36,13 @@ public class Player : MonoBehaviour
         }
     }
 
+    void Start()
+    {
+    }
+
     void Update()
     {
-        speed += Time.deltaTime / 5;
+        speed += Time.deltaTime / 100;
         transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
     }
 
@@ -48,8 +50,6 @@ public class Player : MonoBehaviour
     {
         if (Coll.collider.CompareTag("Enemy"))
         {
-            anim.SetTrigger("Hitted");
-            enemyAnim.SetTrigger("Attack");
             Destroy(Coll.gameObject);
             health -= 1;
         }
