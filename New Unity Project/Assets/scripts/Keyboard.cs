@@ -18,7 +18,7 @@ public class Keyboard : MonoBehaviour
     public Text missCount;
     public int miss = 0;
     public int hit = 0;
-    public Animator playerAnim;
+  
 
     private readonly Dictionary<KeyCode, string> dictionary = new Dictionary<KeyCode, string>
     {
@@ -80,7 +80,6 @@ public class Keyboard : MonoBehaviour
             missCount.text = miss.ToString();
             return;
         }
-        playerAnim.SetTrigger("Shoot");
         Instantiate(Bullet, shotPoint.position, transform.rotation);
         hit += 1;
         hitCount.text = hit.ToString();
