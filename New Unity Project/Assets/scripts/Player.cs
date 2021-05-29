@@ -8,19 +8,13 @@ public class Player : MonoBehaviour
 {
     public int health;
     public int numOfHearts;
-
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
-<<<<<<< HEAD
-
-
-=======
     public GameObject EndGameMenu;
     private float speed = 6f;
     public Animator anim;
     public Animator enemyAnim;
->>>>>>> ba9a03b (Merge branch 'main' of https://github.com/IlyaSecret/Gamee into main)
 
     private void FixedUpdate()
     {
