@@ -31,7 +31,6 @@ public class BulletScr : MonoBehaviour
     {
         if (Coll.collider.CompareTag("Enemy"))
         {
-            Destroy(Coll.gameObject);
             Destroy(gameObject);
         }
     }

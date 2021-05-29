@@ -46,6 +46,7 @@ public class PauseMenu : MonoBehaviour
     public void Restart()
     {
         Time.timeScale = 1f;
+        Timer.timeStart = 0;
         SceneManager.LoadScene("SampleScene");
     }
 }

@@ -12,14 +12,22 @@ public class Player : MonoBehaviour
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
+<<<<<<< HEAD
 
 
+=======
+    public GameObject EndGameMenu;
+    private float speed = 6f;
+    public Animator anim;
+    public Animator enemyAnim;
+>>>>>>> ba9a03b (Merge branch 'main' of https://github.com/IlyaSecret/Gamee into main)
 
     private void FixedUpdate()
     {
         if (health == 0)
         {
-            SceneManager.LoadScene("SampleScene");
+            Time.timeScale = 0f;
+            EndGameMenu.SetActive(true);
         }
         if (health > numOfHearts)
             health = numOfHearts;
@@ -36,21 +44,18 @@ public class Player : MonoBehaviour
         }
     }
 
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
-
+        speed += Time.deltaTime / 5;
+        transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
     }
 
     void OnCollisionEnter2D(Collision2D Coll)
     {
         if (Coll.collider.CompareTag("Enemy"))
         {
+            anim.SetTrigger("Hitted");
+            enemyAnim.SetTrigger("Attack");
             Destroy(Coll.gameObject);
             health -= 1;
         }
