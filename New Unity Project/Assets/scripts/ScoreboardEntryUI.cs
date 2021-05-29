@@ -3,20 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Game.Scoreboards
-{
     public class ScoreboardEntryUI : MonoBehaviour
     {
         [SerializeField] private Text entryNameText = null;
         [SerializeField] private Text entryScoreText = null;
         [SerializeField] private Text entryPlaceText = null;
 
-        public void Initialise(ScoreboardEntryData scoreboardEntryData)
+        public void Initialise(string name, string place, string score)
         {
-            entryNameText.text = scoreboardEntryData.entryName;
-            entryPlaceText.text = scoreboardEntryData.entryPlace.ToString();
-            entryScoreText.text = scoreboardEntryData.entryScore.ToString();
+            entryNameText.text = name;
+            entryPlaceText.text = place;
+            entryScoreText.text = score;
         }
+    }
+
+
+public class ScoreData
+{
+    public readonly string name;
+    public readonly int score;
+
+    public ScoreData(string name, int score)
+    {
+        this.name = name;
+        this.score = score;
     }
 }
 
