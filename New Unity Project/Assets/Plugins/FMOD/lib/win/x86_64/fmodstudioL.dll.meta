@@ -1,6 +1,7 @@
 fileFormatVersion: 2
 guid: 8514ea8d6deab804895ec1cab6902681
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 timeCreated: 1429083373
 licenseType: Store
 PluginImporter:
@@ -77,6 +78,8 @@ PluginImporter:
         CompileFlags: 
         FrameworkDependencies: 
 =======
+=======
+>>>>>>> Stashed changes
 PluginImporter:
   externalObjects: {}
   serializedVersion: 2
@@ -99,6 +102,9 @@ PluginImporter:
       enabled: 0
       settings:
         DefaultValueInitialized: true
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   userData: 
   assetBundleName: 
