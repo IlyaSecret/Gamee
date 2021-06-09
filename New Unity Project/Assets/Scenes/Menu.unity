@@ -1711,7 +1711,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5826957726145026158, guid: 3ff1e7b2f0fca214cbe3c3e8c2c6fd6c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -485
+      value: -485.00003
       objectReference: {fileID: 0}
     - target: {fileID: 5826957726145026158, guid: 3ff1e7b2f0fca214cbe3c3e8c2c6fd6c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4560,6 +4560,7 @@ GameObject:
   - component: {fileID: 1724671144}
   - component: {fileID: 1724671143}
   - component: {fileID: 1724671146}
+  - component: {fileID: 1724671147}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4655,6 +4656,20 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 0
   OverrideMaxDistance: 0
+--- !u!114 &1724671147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724671142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+  ListenerNumber: -1
 --- !u!1 &1737312988
 GameObject:
   m_ObjectHideFlags: 0
