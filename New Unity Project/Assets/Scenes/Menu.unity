@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92b1aa4fd5e8db342984b4827ea810ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: 
+  Event: event:/Sounds/Interface/Interface_1
   PlayOnAwake: 0
 --- !u!1 &33266745
 GameObject:
@@ -932,7 +932,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92b1aa4fd5e8db342984b4827ea810ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: 
+  Event: event:/Sounds/Interface/Interface_1
   PlayOnAwake: 0
 --- !u!1 &585191017
 GameObject:
@@ -1323,6 +1323,7 @@ GameObject:
   m_Component:
   - component: {fileID: 600622305}
   - component: {fileID: 600622306}
+  - component: {fileID: 600622307}
   m_Layer: 5
   m_Name: MusicVolume_Slider
   m_TagString: Untagged
@@ -1399,10 +1400,50 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 878459973}
+        m_TargetAssemblyTypeName: AudioSettings, Assembly-CSharp
+        m_MethodName: SetMusicVolumeLevel
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 600622307}
+        m_TargetAssemblyTypeName: SliderController, Assembly-CSharp
+        m_MethodName: ChangeMusicSlider
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &600622307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600622304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76478f48780cfc24a9ca758e73e982c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSlider: {fileID: 600622306}
+  sfxSlider: {fileID: 1080567251}
+  musicSliderValue: 0.5
+  sfxSliderValue: 0.5
 --- !u!1 &605882680
 GameObject:
   m_ObjectHideFlags: 0
@@ -2017,7 +2058,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92b1aa4fd5e8db342984b4827ea810ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: 
+  Event: event:/Sounds/Interface/Interface_1
   PlayOnAwake: 0
 --- !u!1 &800326092
 GameObject:
@@ -2055,6 +2096,49 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &878459972
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 878459974}
+  - component: {fileID: 878459973}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &878459973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878459972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daea0c1085d7c64f902529ccf12cbcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &878459974
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878459972}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &900770998
 GameObject:
   m_ObjectHideFlags: 0
@@ -2444,6 +2528,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1080567250}
   - component: {fileID: 1080567251}
+  - component: {fileID: 1080567252}
   m_Layer: 5
   m_Name: SoundsVolume_Slider
   m_TagString: Untagged
@@ -2520,10 +2605,50 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 878459973}
+        m_TargetAssemblyTypeName: AudioSettings, Assembly-CSharp
+        m_MethodName: SetSFXVolumeLevel
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1080567252}
+        m_TargetAssemblyTypeName: SliderController, Assembly-CSharp
+        m_MethodName: ChangeSFXSlider
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1080567252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080567249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76478f48780cfc24a9ca758e73e982c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSlider: {fileID: 600622306}
+  sfxSlider: {fileID: 1080567251}
+  musicSliderValue: 0.5
+  sfxSliderValue: 0.5
 --- !u!1001 &1084109058
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2944,7 +3069,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92b1aa4fd5e8db342984b4827ea810ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: 
+  Event: event:/Sounds/Interface/Interface_1
   PlayOnAwake: 0
 --- !u!114 &1166480472
 MonoBehaviour:
@@ -4094,7 +4219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92b1aa4fd5e8db342984b4827ea810ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: 
+  Event: event:/Sounds/Interface/Interface_2
   PlayOnAwake: 0
 --- !u!1001 &1608462722
 PrefabInstance:
@@ -4763,7 +4888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92b1aa4fd5e8db342984b4827ea810ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: 
+  Event: event:/Sounds/Interface/Interface_2
   PlayOnAwake: 0
 --- !u!1 &1814071697 stripped
 GameObject:

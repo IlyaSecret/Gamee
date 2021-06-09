@@ -1,5 +1,28 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7094827965525528772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sounds/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Sounds/Footsteps
+  guid: a40faccd2d4dad4785e4332d48a20921
+  Banks:
+  - {fileID: 3617248789124267336}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1000
 --- !u!114 &-6403157110634500755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,11 +84,11 @@ MonoBehaviour:
   Path: GameAudio/Assets/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637579082805291106
+  lastModified: 637588409652506930
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 968
+    Value: 1078
   Exists: 1
 --- !u!114 &-2626161740030038146
 MonoBehaviour:
@@ -111,12 +134,13 @@ MonoBehaviour:
   - {fileID: -5478686915893403311}
   - {fileID: -2626161740030038146}
   - {fileID: -6403157110634500755}
+  - {fileID: -7094827965525528772}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3617248789124267336}
   StringsBanks:
   - {fileID: -3149049206039012511}
-  stringsBankWriteTime: 637579082805291106
+  stringsBankWriteTime: 637588409652506930
   cacheVersion: 6
 --- !u!114 &3617248789124267336
 MonoBehaviour:
@@ -133,7 +157,7 @@ MonoBehaviour:
   Path: GameAudio/Assets/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637579082805271157
+  lastModified: 637588409652477028
   LoadResult: 0
   FileSizes: []
   Exists: 1

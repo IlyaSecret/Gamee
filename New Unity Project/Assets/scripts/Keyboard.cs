@@ -81,6 +81,7 @@ public class Keyboard : MonoBehaviour
             return;
         }
         playerAnim.SetTrigger("Shoot");
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Sounds/Shots");
         Instantiate(Bullet, shotPoint.position, transform.rotation);
         hit += 1;
         hitCount.text = hit.ToString();
