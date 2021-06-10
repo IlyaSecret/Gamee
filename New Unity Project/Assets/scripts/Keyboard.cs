@@ -24,41 +24,7 @@ public class Keyboard : MonoBehaviour
     public int hit = 0;
     public Animator playerAnim;
 
-    private readonly Dictionary<KeyCode, string> dictionary = new Dictionary<KeyCode, string>
-    {
-        [KeyCode.Q] = "É",
-        [KeyCode.W] = "Ö",
-        [KeyCode.E] = "Ó",
-        [KeyCode.R] = "Ê",
-        [KeyCode.T] = "Å",
-        [KeyCode.Y] = "Í",
-        [KeyCode.U] = "Ã",
-        [KeyCode.I] = "Ø",
-        [KeyCode.O] = "Ù",
-        [KeyCode.P] = "Ç",
-        [KeyCode.LeftBracket] = "Õ",
-        [KeyCode.RightBracket] = "Ú",
-        [KeyCode.A] = "Ô",
-        [KeyCode.S] = "Û",
-        [KeyCode.D] = "Â",
-        [KeyCode.F] = "À",
-        [KeyCode.G] = "Ï",
-        [KeyCode.H] = "Ð",
-        [KeyCode.J] = "Î",
-        [KeyCode.K] = "Ë",
-        [KeyCode.L] = "Ä",
-        [KeyCode.Semicolon] = "Æ",
-        [KeyCode.Quote] = "Ý",
-        [KeyCode.Z] = "ß",
-        [KeyCode.X] = "×",
-        [KeyCode.C] = "Ñ",
-        [KeyCode.V] = "Ì",
-        [KeyCode.B] = "È",
-        [KeyCode.N] = "Ò",
-        [KeyCode.M] = "Ü",
-        [KeyCode.Comma] = "Á",
-        [KeyCode.Period] = "Þ"
-    };
+    private readonly Dictionary<KeyCode, string> dictionary = LevelCharacteristics.CurrentLevelData.Dictionary;
 
     private void Awake()
     {
