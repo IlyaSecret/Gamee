@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField] private UnityEvent OnDead;
+
     public int health;
     public int numOfHearts;
     public Image[] hearts;
@@ -21,6 +24,7 @@ public class Player : MonoBehaviour
         if (health == 0)
         {
             Time.timeScale = 0f;
+            OnDead.Invoke();
             EndGameMenu.SetActive(true);
         }
         if (health > numOfHearts)

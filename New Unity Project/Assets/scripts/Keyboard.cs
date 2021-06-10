@@ -5,9 +5,13 @@ using UnityEngine.UI;
 using UnityEngine;
 using Random = UnityEngine.Random;
 using System.Collections.Generic;
+using UnityEngine.Events;
 
 public class Keyboard : MonoBehaviour
 {
+    [SerializeField] private UnityEvent OnCorrectPress;
+    [SerializeField] private UnityEvent OnIncorrectPress;
+
     public GameObject Bullet;
     public Transform shotPoint;
     [SerializeField] private Text[] letters;
@@ -78,8 +82,10 @@ public class Keyboard : MonoBehaviour
         {
             miss += 1;
             missCount.text = miss.ToString();
+            OnIncorrectPress.Invoke();
             return;
         }
+        OnCorrectPress.Invoke();
         playerAnim.SetTrigger("Shoot");
         Instantiate(Bullet, shotPoint.position, transform.rotation);
         hit += 1;
