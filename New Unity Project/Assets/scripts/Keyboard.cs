@@ -10,18 +10,21 @@ using UnityEngine.Events;
 public class Keyboard : MonoBehaviour
 {
     [SerializeField] private UnityEvent OnCorrectPress;
-    [SerializeField] private UnityEvent OnIncorrectPress;
+    //[SerializeField] private UnityEvent OnIncorrectPress;
 
     public GameObject Bullet;
     public Transform shotPoint;
     [SerializeField] private Text[] letters;
+    [SerializeField] private Color[] colors;
     private KeyCode[] keyCodes = new KeyCode[9];
     private KeyCode[] dictionaryKeyCodes;
-    [SerializeField] private Color[] colors;
+
     public Text hitCount;
     public Text missCount;
+
     public int miss = 0;
     public int hit = 0;
+
     public Animator playerAnim;
 
     private readonly Dictionary<KeyCode, string> dictionary = LevelCharacteristics.CurrentLevelData.Dictionary;
@@ -48,7 +51,6 @@ public class Keyboard : MonoBehaviour
         {
             miss += 1;
             missCount.text = miss.ToString();
-            OnIncorrectPress.Invoke();
             return;
         }
         OnCorrectPress.Invoke();
