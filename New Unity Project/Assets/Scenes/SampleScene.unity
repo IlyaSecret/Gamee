@@ -2306,6 +2306,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnLevelEnd:
+    m_PersistentCalls:
+      m_Calls: []
   Bullet: {fileID: 5091648848312258370, guid: b53306f0975be9c44b5138179b7b9805, type: 3}
   shotPoint: {fileID: 421030723}
   letters:
@@ -2318,12 +2321,6 @@ MonoBehaviour:
   - {fileID: 822469350}
   - {fileID: 373624372}
   - {fileID: 1555695705}
-  colors:
-  - {r: 0.52156866, g: 1, b: 0.654902, a: 1}
-  - {r: 0.69411767, g: 0.6784314, b: 1, a: 1}
-  - {r: 0.98823535, g: 0.29411766, b: 0.85098046, a: 1}
-  - {r: 0.89019614, g: 0.6039216, b: 0.20000002, a: 1}
-  - {r: 0.93725497, g: 0.8980393, b: 0.58431375, a: 1}
   hitCount: {fileID: 514713504}
   missCount: {fileID: 1963575532}
   miss: 0
@@ -3175,7 +3172,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 624624901}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 297137092}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: Restart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &624624901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3465,7 +3474,6 @@ MonoBehaviour:
   emptyHeart: {fileID: 21300000, guid: 4d675b83a2321ae4ba5533dd1c3f37b8, type: 3}
   EndGameMenu: {fileID: 217322430}
   anim: {fileID: 639920090}
-  enemyAnim: {fileID: 2279744448279309421, guid: 73aa62985aeb0aa4c9973ef80de3d7c3, type: 3}
 --- !u!95 &639920090
 Animator:
   serializedVersion: 3
@@ -5048,7 +5056,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 989882020}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 297137092}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: LoadMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &989882020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6345,7 +6365,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1295481107
 RectTransform:
   m_ObjectHideFlags: 0
