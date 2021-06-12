@@ -8,7 +8,7 @@ public class Keyboard : MonoBehaviour
 {
     [SerializeField] private UnityEvent OnCorrectPress;
     [SerializeField] private UnityEvent OnLevelEnd;
-    //[SerializeField] private UnityEvent OnIncorrectPress;
+    [SerializeField] private UnityEvent OnIncorrectPress;
 
     public GameObject Bullet;
     public Transform shotPoint;
@@ -68,6 +68,7 @@ public class Keyboard : MonoBehaviour
         {
             miss += 1;
             missCount.text = miss.ToString();
+            OnIncorrectPress.Invoke();
             return;
         }
         OnCorrectPress.Invoke();
