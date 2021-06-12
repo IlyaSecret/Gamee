@@ -45,11 +45,13 @@ public struct LevelData //храним данные, необходимые для задания уровня
 
     public readonly Dictionary<KeyCode, string> Dictionary;
     public readonly int MaxEnemies;
+    public readonly int LettersAmount;
 
-    public LevelData(Dictionary<KeyCode, string> dictionary, int maxEnemies)
+    public LevelData(Dictionary<KeyCode, string> dictionary, int maxEnemies, int lettersAmount)
     {
         Dictionary = dictionary;
         MaxEnemies = maxEnemies;
+        LettersAmount = lettersAmount;
         standardDictionary = new Dictionary<KeyCode, string>
         {
             [KeyCode.Q] = "Й",
@@ -90,7 +92,6 @@ public struct LevelData //храним данные, необходимые для задания уровня
 
 public class LevelCharacteristics : MonoBehaviour //храним наборы для уровней
 {
-
     private static LevelData[] levelDatas = new[]
     {
         // бесконечный уровень
@@ -130,7 +131,8 @@ public class LevelCharacteristics : MonoBehaviour //храним наборы для уровней
             [KeyCode.Comma] = "Б",
             [KeyCode.Period] = "Ю"
             },
-            4
+            4,
+            30
             ),
 
         //1
@@ -140,7 +142,8 @@ public class LevelCharacteristics : MonoBehaviour //храним наборы для уровней
                 [KeyCode.F] = "А",
                 [KeyCode.J] = "О",
             },
-            1
+            1,
+            10
             ),
 
         //2
@@ -152,7 +155,8 @@ public class LevelCharacteristics : MonoBehaviour //храним наборы для уровней
                 [KeyCode.D] = "В",
                 [KeyCode.K] = "Л",
             },
-            2
+            2,
+            20
             ),
     };
 
