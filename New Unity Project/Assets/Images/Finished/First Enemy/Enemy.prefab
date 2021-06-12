@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 1554106184277661120}
   - component: {fileID: 1554106184277661121}
   - component: {fileID: 1554106184277661134}
-  - component: {fileID: 1554106184277661122}
   - component: {fileID: 1554106184277661125}
-  - component: {fileID: 2279744448279309421}
+  - component: {fileID: 5054280273367852139}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -112,19 +111,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.18187086, y: 0.18237731}
   m_EdgeRadius: 0
---- !u!114 &1554106184277661122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1554106184277661135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24273648900edf343b8b9ca595a9b285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyAnim: {fileID: 2279744448279309421}
 --- !u!50 &1554106184277661125
 Rigidbody2D:
   serializedVersion: 4
@@ -146,22 +132,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!95 &2279744448279309421
-Animator:
-  serializedVersion: 3
+--- !u!114 &5054280273367852139
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1554106184277661135}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1b6a9761f5318d64390fbeae08e62b9a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24273648900edf343b8b9ca595a9b285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyAnim: {fileID: 0}

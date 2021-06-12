@@ -17,7 +17,6 @@ public class Player : MonoBehaviour
     public GameObject EndGameMenu;
     private float speed = 6f;
     public Animator anim;
-    public Animator enemyAnim;
 
     private void FixedUpdate()
     {
@@ -53,7 +52,6 @@ public class Player : MonoBehaviour
         if (Coll.collider.CompareTag("Enemy"))
         {
             anim.SetTrigger("Hitted");
-            enemyAnim.SetTrigger("Attack");
             Destroy(Coll.gameObject);
             health -= 1;
         }
