@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{c538db62-2e45-4f20-92ac-54e8ab4d3822}">
+		<property name="assetPath">
+			<value>BlasterShot02.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.2178231292517008</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{e0487cc3-f7bd-46e8-abfa-d4975d01869f}</destination>
+		</relationship>
+	</object>
+</objects>
