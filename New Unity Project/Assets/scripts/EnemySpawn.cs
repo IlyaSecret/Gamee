@@ -7,7 +7,7 @@ public class EnemySpawn : MonoBehaviour
     [SerializeField] private GameObject enemyPrefab;
     [SerializeField] private float padding;
     [SerializeField] private Vector2 enemyPadding;
-    [SerializeField] private int maxEnemies;
+    private int maxEnemies = LevelCharacteristics.CurrentLevelData.MaxEnemies;
     private float lastX;
 
     private void Update()
