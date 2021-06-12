@@ -14,8 +14,10 @@ public class Keyboard : MonoBehaviour
 
     public GameObject Bullet;
     public Transform shotPoint;
+
     [SerializeField] private Text[] letters;
     [SerializeField] private Color[] colors;
+
     private KeyCode[] keyCodes = new KeyCode[9];
     private KeyCode[] dictionaryKeyCodes;
 
