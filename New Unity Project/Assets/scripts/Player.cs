@@ -14,17 +14,16 @@ public class Player : MonoBehaviour
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
-    public GameObject EndGameMenu;
     private float speed = 6f;
     public Animator anim;
 
     private void FixedUpdate()
     {
+        if (Time.timeScale == 0) OnDead.Invoke();
         if (health == 0)
         {
             Time.timeScale = 0f;
             OnDead.Invoke();
-            EndGameMenu.SetActive(true);
         }
         if (health > numOfHearts)
             health = numOfHearts;
@@ -52,7 +51,6 @@ public class Player : MonoBehaviour
         if (Coll.collider.CompareTag("Enemy"))
         {
             anim.SetTrigger("Hitted");
-            Destroy(Coll.gameObject);
             health -= 1;
         }
     }

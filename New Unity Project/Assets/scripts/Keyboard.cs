@@ -13,22 +13,52 @@ public class Keyboard : MonoBehaviour
     public GameObject Bullet;
     public Transform shotPoint;
 
+
     [SerializeField] private Text[] letters;
     private Dictionary<string, Color> colors = new Dictionary<string, Color>
     {
-        { "Й", new Color(255,100,50) },
-        { "Ц", new Color(0,0,0) },
-        { "У", new Color(0,0,0) },
-        { "К", new Color(0,0,0) },
-        { "Е", new Color(0,0,0) },
-        { "Н", new Color(0,0,0) },
-        { "Г", new Color(0,0,0) },
-        { "Ш", new Color(0,0,0) },
-        { "Щ", new Color(0,0,0) },
-        { "З", new Color(0,0,0) },
-        { "Х", new Color(0,0,0) },
-        { "А", new Color(0,0,0) },
-        { "О", new Color(50,50,50) },
+        //отряд зеленых
+        { "Й", new Color(0.04f, 0.89f, 0, 0.98f) },
+        { "Ф", new Color(0.04f, 0.89f, 0, 0.98f) },
+        { "Я", new Color(0.04f, 0.89f, 0, 0.98f) },
+        { "З", new Color(0.04f, 0.89f, 0, 0.98f) },
+        { "Ж", new Color(0.04f, 0.89f, 0, 0.98f) },
+        { "Э", new Color(0.04f, 0.89f, 0, 0.98f) },
+        { "Х", new Color(0.04f, 0.89f, 0, 0.98f) },
+        { "Ъ", new Color(0.04f, 0.89f, 0, 0.98f) },
+
+        //отряд голубых
+        { "Ц", new Color(0.18f, 0.82f, 0.98f, 0.98f) },
+        { "Ы", new Color(0.18f, 0.82f, 0.98f, 0.98f) },
+        { "Ч", new Color(0.18f, 0.82f, 0.98f, 0.98f) },
+        { "Щ", new Color(0.18f, 0.82f, 0.98f, 0.98f) },
+        { "Д", new Color(0.18f, 0.82f, 0.98f, 0.98f) },
+        { "Ю", new Color(0.18f, 0.82f, 0.98f, 0.98f) },
+
+        //отряд розовых
+        { "У", new Color(1.0f, 0.41f, 0.71f) },
+        { "В", new Color(1.0f, 0.41f, 0.71f) },
+        { "С", new Color(1.0f, 0.41f, 0.71f) },
+        { "Ш", new Color(1.0f, 0.41f, 0.71f) },
+        { "Л", new Color(1.0f, 0.41f, 0.71f) },
+        { "Б", new Color(1.0f, 0.41f, 0.71f) },
+
+        //отряд оранжевых
+        { "К", new Color(1.0f, 0.64f, 0.0f) },
+        { "Е", new Color(1.0f, 0.64f, 0.0f) },
+        { "А", new Color(1.0f, 0.64f, 0.0f) },
+        { "П", new Color(1.0f, 0.64f, 0.0f) },
+        { "М", new Color(1.0f, 0.64f, 0.0f) },
+        { "И", new Color(1.0f, 0.64f, 0.0f) },
+
+        //отряд желтых
+        { "Н", new Color(0.98f, 0.8f, 0.13f, 0.98f) },
+        { "Г", new Color(0.98f, 0.8f, 0.13f, 0.98f) },
+        { "Р", new Color(0.98f, 0.8f, 0.13f, 0.98f) },
+        { "О", new Color(0.98f, 0.8f, 0.13f, 0.98f) },
+        { "Т", new Color(0.98f, 0.8f, 0.13f, 0.98f) },
+        { "Ь", new Color(0.98f, 0.8f, 0.13f, 0.98f) },
+
     };
 
     private int neededLettersAmount = LevelCharacteristics.CurrentLevelData.LettersAmount;
@@ -60,10 +90,9 @@ public class Keyboard : MonoBehaviour
 
     private void Update()
     {
-        if (!Input.anyKeyDown)
-        {
-            return;
-        }
+        if (Time.timeScale == 0) return;
+        if (!Input.anyKeyDown) return;
+        if (Input.GetKey(KeyCode.Escape)) return;
         if (!dictionary.Keys.Any(keyCode => Input.GetKeyDown(keyCode) && keyCodes[1] == keyCode))
         {
             miss += 1;

@@ -4,11 +4,19 @@ using UnityEngine;
 
 public class EnemyScr : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D Coll)
+    private void OnCollisionEnter2D(Collision2D collider)
     {
-        if (Coll.collider.CompareTag("Bullet"))
+        if (collider.collider.CompareTag("Bullet"))
         {
-            Destroy(gameObject);
+            GetComponent<Animator>().SetTrigger("Die");
+            GetComponent<Collider2D>().enabled = false;
+        }
+        else if (collider.collider.CompareTag("Player"))
+        {
+            GetComponent<Animator>().SetTrigger("Attack");
+            GetComponent<Collider2D>().enabled = false;
         }
     }
+
+    public void Die() => Destroy(gameObject);
 }
